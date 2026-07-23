@@ -1,0 +1,72 @@
+/* ==========================================
+   ESTILOS Y TEMA CORE - KIOSCO DIGITAL LBTECNO
+   ========================================== */
+
+/* Variables de colores para el Tema Oscuro */
+.theme-dark {
+    --color-bg-body: #030303;
+    --color-bg-container: #09090b; /* zinc-950 */
+    --color-bg-card: #18181b; /* zinc-900 */
+    --color-bg-input: #18181b; /* zinc-900 */
+    --color-border: #27272a; /* zinc-800 */
+    --color-text-primary: #f4f4f5; /* zinc-100 */
+    --color-text-secondary: #a1a1aa; /* zinc-400 */
+    --color-bg-modal: #09090b;
+    --color-bg-spec: #18181b;
+    --color-text-spec: #d4d4d8;
+}
+
+/* Variables de colores para el Tema Claro */
+.theme-light {
+    --color-bg-body: #f4f4f5; /* zinc-100 */
+    --color-bg-container: #ffffff; /* blanco */
+    --color-bg-card: #f4f4f5; /* zinc-100 */
+    --color-bg-input: #f4f4f5; /* zinc-100 */
+    --color-border: #e4e4e7; /* zinc-200 */
+    --color-text-primary: #18181b; /* zinc-900 */
+    --color-text-secondary: #52525b; /* zinc-600 */
+    --color-bg-modal: #ffffff;
+    --color-bg-spec: #e4e4e7;
+    --color-text-spec: #27272a;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-bg-body);
+    transition: background-color 0.3s ease;
+}
+
+.font-display { font-family: 'Outfit', sans-serif; }
+.font-serif { font-family: 'Playfair Display', serif; }
+
+/* Ocultar barra de scroll manteniendo funcionalidad */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Animación del panel carrito */
+#cart-panel {
+    transition: transform 0.35s cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+/* Badge pulso */
+@keyframes badge-pop {
+    0%   { transform: scale(1); }
+    40%  { transform: scale(1.5); }
+    70%  { transform: scale(0.9); }
+    100% { transform: scale(1); }
+}
+.badge-pop { animation: badge-pop 0.35s ease forwards; }
+
+/* Animación entrada item carrito */
+@keyframes cart-item-in {
+    from { opacity: 0; transform: translateY(-6px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.cart-item-enter { animation: cart-item-in 0.25s ease forwards; }
+
+/* Botón agregar - estado en carrito */
+.in-cart-btn {
+    background: linear-gradient(135deg, #c5a880, #b3956d) !important;
+    color: #1a1a1a !important;
+    border-color: transparent !important;
+}

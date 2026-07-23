@@ -1,0 +1,223 @@
+/**
+ * Estilos del área de administración para el plugin LBtecno GTPW
+ * Author: Alejandro Leal <https://lbtecno.net>
+ */
+
+.lbtecno-gtpw-wrap {
+    margin-top: 20px;
+    max-width: 1100px;
+}
+
+.lbtecno-gtpw-card {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-left: 4px solid #2271b1;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .04);
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+}
+
+.lbtecno-gtpw-card h2 {
+    margin-top: 0;
+    font-size: 1.3em;
+    color: #1d2327;
+}
+
+.lbtecno-gtpw-form {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.lbtecno-gtpw-form input[type='text'] {
+    min-width: 340px;
+    padding: 6px 10px;
+}
+
+/* Centrado y alineación de botones e iconos (Dashicons) */
+.lbtecno-gtpw-wrap .button,
+.lbtecno-gtpw-wrap .button-primary,
+.lbtecno-gtpw-wrap .button-secondary,
+.lbtecno-gtpw-wrap .button-small,
+.lbtecno-gtpw-wrap .nav-tab,
+.lbtecno-gtpw-wrap .lbtecno-gtpw-back-link {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    text-decoration: none;
+}
+
+.lbtecno-gtpw-wrap .dashicons,
+.lbtecno-gtpw-wrap .dashicons-before:before,
+.lbtecno-gtpw-wrap .dashicons:before {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    vertical-align: middle !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+    height: 1em !important;
+    width: 1em !important;
+    font-size: 18px;
+}
+
+.lbtecno-gtpw-wrap .button-small .dashicons,
+.lbtecno-gtpw-wrap .button-small .dashicons:before {
+    font-size: 15px;
+}
+
+.lbtecno-gtpw-wrap .nav-tab .dashicons,
+.lbtecno-gtpw-wrap .nav-tab .dashicons:before {
+    font-size: 17px;
+}
+
+.lbtecno-gtpw-wrap .button-link-delete {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+}
+
+/* Estilos de la tabla */
+.lbtecno-gtpw-table {
+    margin-top: 15px;
+}
+
+.lbtecno-gtpw-code-tag {
+    background: #f0f0f1;
+    border: 1px solid #c3c4c7;
+    padding: 3px 6px;
+    border-radius: 3px;
+    font-family: monospace;
+    font-size: 0.9em;
+    color: #2c3338;
+}
+
+.lbtecno-gtpw-copy-btn {
+    margin-left: 4px !important;
+    vertical-align: middle;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.lbtecno-gtpw-copy-btn.copied {
+    background-color: #007017 !important;
+    border-color: #007017 !important;
+    color: #ffffff !important;
+}
+
+.lbtecno-gtpw-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px;
+}
+
+.lbtecno-gtpw-actions form {
+    display: inline-flex;
+    margin: 0;
+}
+
+.lbtecno-gtpw-back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #2271b1;
+}
+
+.lbtecno-gtpw-back-link:hover {
+    text-decoration: underline;
+}
+
+/* Formulario de gestión de tienda */
+.lbtecno-gtpw-store-form .form-table th {
+    width: 200px;
+    padding: 15px 10px 15px 0;
+    font-weight: 600;
+}
+
+.lbtecno-gtpw-store-form .form-table td {
+    padding: 12px 0;
+}
+
+.lbtecno-gtpw-media-input-wrap {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    max-width: 600px;
+}
+
+.lbtecno-gtpw-media-preview {
+    margin-top: 10px;
+    display: inline-block;
+    position: relative;
+    border: 1px solid #c3c4c7;
+    padding: 4px;
+    background: #f6f7f7;
+    border-radius: 4px;
+}
+
+.lbtecno-gtpw-media-preview img {
+    max-height: 90px;
+    max-width: 250px;
+    display: block;
+    object-fit: contain;
+}
+
+/* Tablas repetidoras de categorías y productos */
+.lbtecno-gtpw-categories-table,
+.lbtecno-gtpw-products-table {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.lbtecno-gtpw-categories-table th,
+.lbtecno-gtpw-products-table th {
+    font-weight: 600;
+}
+
+.lbtecno-gtpw-categories-table td,
+.lbtecno-gtpw-products-table td {
+    vertical-align: top;
+    padding: 10px 8px;
+}
+
+/* Visor de Código JSON */
+.lbtecno-gtpw-code-editor {
+    background: #1e1e1e;
+    color: #d4d4d4;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 13px;
+    line-height: 1.5;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    width: 100%;
+    min-height: 340px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.lbtecno-gtpw-footer {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #646970;
+    border-top: 1px solid #dcdcde;
+    padding-top: 15px;
+}
+
+.lbtecno-gtpw-footer a {
+    color: #2271b1;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.lbtecno-gtpw-footer a:hover {
+    text-decoration: underline;
+}
