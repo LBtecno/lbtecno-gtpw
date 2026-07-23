@@ -21,7 +21,7 @@ require plugin_dir_path(__FILE__) . 'includes/plugin-update-checker/plugin-updat
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
 $updateChecker = PucFactory::buildUpdateChecker(
-    'https://github.com/LBtecno/gtpw',
+    'https://github.com/LBtecno/lbtecno-gtpw',
     __FILE__,
     'lbtecno-gtpw'
 );
